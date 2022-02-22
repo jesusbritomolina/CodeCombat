@@ -1,0 +1,36 @@
+<!--https://codecombat.com/play/level/disappearing-act?-->
+<!-- JavaScript can be used to show and hide elements! -->
+
+<script>
+    var showButton = $("#showButton");
+    // Create the variable 'hideButton' to store #hideButton
+    var hideButton = $("#hideButton");
+    var image = $("#image");
+    function showElement() {
+        image.show();
+    }
+    function hideElement() {
+        // Use the "hide()" function on the image variable:
+        image.hide();
+    }
+    showButton.on("click", showElement);
+    // Add an event listener to the hideButton variable.
+    // It should perform hideElement when a "click" occurs:
+    hideButton.on("click", hideElement);
+</script>
+<style>
+    body {
+        text-align:center;
+    }
+    button {
+        width:25%;
+        height:64px;
+    }
+    img {
+       width:50%; 
+    }
+</style>
+<button id="showButton">Show</button>
+<button id="hideButton">Hide</button>
+<br>
+<img id="image" src="http://direct.codecombat.com/file/db/thang.type/57586f0a22179b2800efda37/portrait.png"/>
